@@ -62,21 +62,21 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+/* @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+  
+    a:hover {
+      color: #747bff;
+    }
+  
+    button {
+      background-color: #f9f9f9;
+    }
   }
-
-  a:hover {
-    color: #747bff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
+   */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -102,16 +102,15 @@ input[type="text"] {
   margin-bottom: 10px;
 }
 
-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
+.flex {
+min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  /* align-content: center; */
+  justify-content: center;
+  align-items: center;
 
-button:hover {
-  background-color: #0056b3;
 }
 
 .task {
@@ -156,16 +155,4 @@ input[type="text"] {
   padding: 10px;
   font-size: 16px;
   margin-bottom: 10px;
-}
-
-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
 }
